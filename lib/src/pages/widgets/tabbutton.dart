@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:update_create/controller/tabcontroller.dart';
+import 'package:update_create/src/controller/tabcontroller.dart';
 
 Widget tabButton(String title, int i) {
   final MyTabController myTabController = Get.put(MyTabController());

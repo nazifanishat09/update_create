@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:update_create/controller/tabcontroller.dart';
-import 'package:update_create/src/pages/homeScreen.dart';
+import 'package:update_create/src/controller/tabcontroller.dart';
+import 'package:update_create/src/pages/Home_screen/homeScreen.dart';
 import 'package:update_create/src/pages/widgets/producScreen.dart';
 import 'package:update_create/src/pages/widgets/tabbutton.dart';
 
@@ -56,9 +56,9 @@ class TabScreen extends StatelessWidget {
             Expanded(
               child: Obx(() {
                 if (myTabController.index.value == 0) {
-                  return Center(child: Column(children: [HomeScreen()]));
+                  return HomeScreen();
                 } else if (myTabController.index.value == 1) {
-                  return Center(child: ProducScreen());
+                  return ProducScreen();
                 } else {
                   return Center(child: Text("Settings Page"));
                 }
